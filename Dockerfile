@@ -1,4 +1,4 @@
-FROM mongo:3
+FROM qnapnas/qiot-mongodb_armhf
 
 # add current folder to Docker container
 COPY . /app
