@@ -6,8 +6,10 @@ COPY . /app
 # set the working directory so the indexes/query plans creation scripts
 # will be able to find the indexes/query plans files.
 WORKDIR /app
-ENTRYPOINT ["/usr/bin/mongod"]
+#ENTRYPOINT ["/usr/bin/mongod"]
+EXPOSE 27017
 
+CMD mongod
 
 
 
